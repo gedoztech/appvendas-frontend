@@ -85,8 +85,8 @@ jobs:
     # Set up kustomize
     - name: Set up Kustomize
       run: |-
-        curl -sfL https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2Fv4.3.0/kustomize_v4.3.0_linux_amd64.tar.gz
-        tar -xf kustomize_v4.3.0_linux_amd64.tar.gz kustomize
+        curl -sfLo kustomize2 https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize%2Fv4.3.0/kustomize_v4.3.0_linux_amd64.tar.gz
+        tar -xf kustomize2
         ls -la
         chmod u+x ./kustomize
 
